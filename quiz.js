@@ -139,10 +139,10 @@ const questionBank = [
         answers: [
             "Gomu Gomu no Mi",
             "Mera Mera no Mi",
-            "Ope Ope no Mi",
+            "Hito Hito no Mi model: Sun God",
             "Gura Gura no Mi"
         ],
-        correct: "Gomu Gomu no Mi"
+        correct: "Hito Hito no Mi model: Sun God"
     },
 
     {
@@ -176,7 +176,7 @@ const questionBank = [
             "Yami Sukehiro",
             "Fuegoleon Vermillion",
             "William Vangeance",
-            "Nozel Silva"
+            "Nacht Faust"
         ],
         correct: "Yami Sukehiro"
     },
@@ -200,7 +200,7 @@ const questionBank = [
             "Pain",
             "Itachi",
             "Kisame",
-            "Deidara"
+            "Naruto"
         ],
         correct: "Pain"
     },
@@ -246,7 +246,7 @@ const questionBank = [
         question: "What is the name of the Soul Reaper organization in Bleach?",
         answers: [
             "Gotei 13",
-            "Akatsuki",
+            "Espada",
             "Black Bulls",
             "Phantom Troupe"
         ],
@@ -308,14 +308,14 @@ const questionBank = [
 
     {
         difficulty: "Hard",
-        question: "Which Hashira uses Love Breathing?",
+        question: "what’s the name of kenpachi's zanpakuto",
         answers: [
-            "Mitsuri Kanroji",
-            "Shinobu Kocho",
-            "Kanae Kocho",
-            "Kanao Tsuyuri"
+            "Nozarashi",
+            "Zabimaru",
+            "Sakaade",
+            "Enrakyōten"
         ],
-        correct: "Mitsuri Kanroji"
+        correct: "Nozarashi"
     },
 
     {
