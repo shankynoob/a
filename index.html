@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAZE is a curated home for your next anime obsession.">
+  <title>KAZE — Find your next obsession</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Kaze home">KAZE<span class="brand-mark">/</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#discover">Discover</a>
+        <a href="#library">My library <span class="nav-count">03</span></a>
+      </nav>
+      <button class="profile-button" type="button" aria-label="Open profile menu"><span>AK</span><i></i></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">01 / Featured this week</p>
+          <h1 id="hero-title">Find your next<br><em>obsession.</em></h1>
+          <p class="hero-description">Stories that stay with you. Handpicked worlds, unforgettable characters, and the kind of endings you think about at 2am.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#discover">Explore collection <span>↗</span></a>
+            <button class="button button-quiet" type="button" data-toast="Your watchlist is ready to grow.">＋ Add to list</button>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustrated sunset over a quiet Japanese town">
+          <div class="hero-art-label"><span>Now streaming</span><strong>Weathering with You</strong></div>
+          <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+          <div class="skyline skyline-back"></div><div class="skyline skyline-front"></div>
+          <div class="hero-grain"></div>
+        </div>
+        <div class="hero-index"><span>Scroll to explore</span><b>↓</b></div>
+      </section>
+
+      <section class="trending-section reveal-section" aria-labelledby="trending-title">
+        <div class="section-heading trending-heading"><div><p class="eyebrow">02 / Trending now</p><h2 id="trending-title">Worth the binge.</h2></div><span class="carousel-hint">Drag to explore <b>→</b></span></div>
+        <div class="trending-rail" id="trending-rail" tabindex="0" aria-label="Trending anime carousel">
+          <article class="trend-card"><div class="trend-art trend-art-one"><span>01</span><strong>Attack on<br>Titan</strong></div><div><h3>Attack on Titan</h3><p>Action · ★ 9.4</p></div></article>
+          <article class="trend-card"><div class="trend-art trend-art-two"><span>02</span><strong>Frieren</strong></div><div><h3>Frieren: Beyond Journey's End</h3><p>Fantasy · ★ 9.3</p></div></article>
+          <article class="trend-card"><div class="trend-art trend-art-three"><span>03</span><strong>Solo<br>Leveling</strong></div><div><h3>Solo Leveling</h3><p>Action · ★ 8.8</p></div></article>
+          <article class="trend-card"><div class="trend-art trend-art-four"><span>04</span><strong>Vinland<br>Saga</strong></div><div><h3>Vinland Saga</h3><p>Adventure · ★ 9.1</p></div></article>
+        </div>
+      </section>
+
+      <section class="discover-section reveal-section" id="discover" aria-labelledby="discover-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / The collection</p><h2 id="discover-title">Made for your mood.</h2></div>
+          <p class="section-note">A little bit of everything<br>you love.</p>
+        </div>
+        <div class="toolbar">
+          <div class="filter-list" role="group" aria-label="Filter anime by genre">
+            <button class="filter active" type="button" data-filter="all">All titles</button>
+            <button class="filter" type="button" data-filter="action">Action</button>
+            <button class="filter" type="button" data-filter="adventure">Adventure</button>
+            <button class="filter" type="button" data-filter="supernatural">Supernatural</button>
+          </div>
+          <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search titles" aria-label="Search anime titles"></label>
+        </div>
+        <div class="anime-grid" id="anime-grid">
+          <article class="anime-card featured-card" data-title="One Piece" data-genre="adventure action" data-detail="one-piece-detail" tabindex="0" role="button" aria-label="View One Piece details">
+            <div class="poster poster-one"><img src="images/one-piece.jpg" alt="One Piece artwork" onerror="this.style.display='none'"><span class="poster-fallback">ONE<br>PIECE</span><button class="bookmark" type="button" aria-label="Add One Piece to list" data-toast="One Piece added to your list.">＋</button><span class="card-tag">Fan favourite</span></div>
+            <div class="card-info"><div><h3>One Piece</h3><p>Adventure · 1999</p></div><span class="rating">★ 9.2</span></div>
+          </article>
+          <article class="anime-card" data-title="Naruto: Shippuden" data-genre="action adventure" data-detail="naruto-detail" tabindex="0" role="button" aria-label="View Naruto: Shippuden details">
+            <div class="poster poster-naruto"><img src="images/naruto.jpg" alt="Naruto artwork" onerror="this.style.display='none'"><span class="poster-fallback">NARUTO<br><small>SHIPPUDEN</small></span><button class="bookmark" type="button" aria-label="Add Naruto Shippuden to list" data-toast="Naruto: Shippuden added to your list.">＋</button></div>
+            <div class="card-info"><div><h3>Naruto: Shippuden</h3><p>Action · 2007</p></div><span class="rating">★ 9.0</span></div>
+          </article>
+          <article class="anime-card" data-title="Bleach" data-genre="action supernatural" data-detail="bleach-detail" tabindex="0" role="button" aria-label="View Bleach details">
+            <div class="poster poster-bleach"><img src="images/bleach.jpg" alt="Bleach artwork" onerror="this.style.display='none'"><span class="poster-fallback">BLEACH</span><button class="bookmark" type="button" aria-label="Add Bleach to list" data-toast="Bleach added to your list.">＋</button></div>
+            <div class="card-info"><div><h3>Bleach</h3><p>Supernatural · 2004</p></div><span class="rating">★ 8.9</span></div>
+          </article>
+          <article class="anime-card" data-title="Jujutsu Kaisen" data-genre="action supernatural" data-detail="jjk-detail" tabindex="0" role="button" aria-label="View Jujutsu Kaisen details">
+            <div class="poster poster-jjk"><img src="images/jjk.jpg" alt="Jujutsu Kaisen artwork" onerror="this.style.display='none'"><span class="poster-fallback">JUJUTSU<br>KAISEN</span><button class="bookmark" type="button" aria-label="Add Jujutsu Kaisen to list" data-toast="Jujutsu Kaisen added to your list.">＋</button></div>
+            <div class="card-info"><div><h3>Jujutsu Kaisen</h3><p>Supernatural · 2020</p></div><span class="rating">★ 9.1</span></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No titles match that search.</p>
+      </section>
+
+      <section class="library-strip" id="library"><div><p class="eyebrow">03 / Keep watching</p><h2>Your library, your rules.</h2></div><a class="text-link" href="#discover">View your list <span>↗</span></a></section>
+    </main>
+    <footer><span>KAZE / Curated anime for curious people.</span><span>Made for the next episode.</span></footer>
+  </div>
+  <section class="detail-panel" id="one-piece-detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden>
+    <div class="detail-backdrop" data-close-detail></div>
+    <div class="detail-card">
+      <button class="detail-close" type="button" aria-label="Close One Piece details" data-close-detail>×</button>
+      <div class="detail-poster poster poster-one"><img src="images/one-piece.jpg" alt="One Piece poster" onerror="this.style.display='none'"><span class="poster-fallback">ONE<br>PIECE</span></div>
+      <div class="detail-content">
+        <p class="eyebrow">Anime / Adventure</p>
+        <h2 id="detail-title">One Piece</h2>
+        <p class="detail-rating">★ <strong>9.2</strong></p>
+        <div class="detail-block"><span class="detail-label">Genres</span><p>Action <b>•</b> Adventure <b>•</b> Fantasy</p></div>
+        <div class="detail-block"><span class="detail-label">Episodes</span><div class="episode-list" role="group" aria-label="One Piece episodes"></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-panel" id="naruto-detail" role="dialog" aria-modal="true" aria-labelledby="naruto-detail-title" hidden>
+    <div class="detail-backdrop" data-close-detail></div>
+    <div class="detail-card">
+      <button class="detail-close" type="button" aria-label="Close Naruto: Shippuden details" data-close-detail>×</button>
+      <div class="detail-poster poster poster-naruto"><img src="images/naruto.jpg" alt="Naruto: Shippuden poster" onerror="this.style.display='none'"><span class="poster-fallback">NARUTO<br><small>SHIPPUDEN</small></span></div>
+      <div class="detail-content">
+        <p class="eyebrow">Anime / Adventure</p>
+        <h2 id="naruto-detail-title">Naruto: Shippuden</h2>
+        <p class="detail-rating">★ <strong>9.0</strong></p>
+        <div class="detail-block"><span class="detail-label">Genres</span><p>Action <b>•</b> Adventure <b>•</b> Fantasy</p></div>
+        <div class="detail-block"><span class="detail-label">Episodes</span><div class="episode-list" role="group" aria-label="Naruto: Shippuden episodes"></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-panel" id="bleach-detail" role="dialog" aria-modal="true" aria-labelledby="bleach-detail-title" hidden>
+    <div class="detail-backdrop" data-close-detail></div>
+    <div class="detail-card">
+      <button class="detail-close" type="button" aria-label="Close Bleach details" data-close-detail>×</button>
+      <div class="detail-poster poster poster-bleach"><img src="images/bleach.jpg" alt="Bleach poster" onerror="this.style.display='none'"><span class="poster-fallback">BLEACH</span></div>
+      <div class="detail-content">
+        <p class="eyebrow">Anime / Supernatural</p>
+        <h2 id="bleach-detail-title">Bleach</h2>
+        <p class="detail-rating">★ <strong>8.9</strong></p>
+        <div class="detail-block"><span class="detail-label">Genres</span><p>Action <b>•</b> Supernatural <b>•</b> Fantasy</p></div>
+        <div class="detail-block"><span class="detail-label">Episodes</span><div class="episode-list" role="group" aria-label="Bleach episodes"></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-panel" id="jjk-detail" role="dialog" aria-modal="true" aria-labelledby="jjk-detail-title" hidden>
+    <div class="detail-backdrop" data-close-detail></div>
+    <div class="detail-card">
+      <button class="detail-close" type="button" aria-label="Close Jujutsu Kaisen details" data-close-detail>×</button>
+      <div class="detail-poster poster poster-jjk"><img src="images/jjk.jpg" alt="Jujutsu Kaisen poster" onerror="this.style.display='none'"><span class="poster-fallback">JUJUTSU<br>KAISEN</span></div>
+      <div class="detail-content">
+        <p class="eyebrow">Anime / Supernatural</p>
+        <h2 id="jjk-detail-title">Jujutsu Kaisen</h2>
+        <p class="detail-rating">★ <strong>9.1</strong></p>
+        <div class="detail-block"><span class="detail-label">Genres</span><p>Action <b>•</b> Adventure <b>•</b> Supernatural</p></div>
+        <div class="detail-block"><span class="detail-label">Episodes</span><div class="episode-list" role="group" aria-label="Jujutsu Kaisen episodes"></div></div>
+      </div>
+    </div>
+  </section>
+  <div class="page-loader" aria-hidden="true"><span class="loader-ring"></span><span>Loading title</span></div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
